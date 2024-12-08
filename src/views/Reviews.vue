@@ -49,7 +49,7 @@ const filteredAndSortedReviews = computed(() => {
         <RouterLink :to="`/reviews/${review.documentId}`">
           <h2>{{ review.title }}</h2>
           <p>{{ review.description }}</p>
-          <h3>Rating: {{ review.rating }}</h3>
+          <h3>Rating: {{ review.rating }} <span class="fas fa-star" style="color: yellow;"></span></h3>
         </RouterLink>
       </div>
     </div>
